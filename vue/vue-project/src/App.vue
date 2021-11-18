@@ -1,14 +1,16 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to KING DABONG"/>
+  <HelloWorld msg="Welcom"/>
+  <submit></submit>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import Submit from "@/components/submit";
 
 export default {
   name: 'App',
   components: {
+    Submit,
     HelloWorld
   }
 }
