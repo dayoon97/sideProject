@@ -6,7 +6,7 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '1.8'
+sourceCompatibility = "10"
 
 configurations {
     compileOnly {
@@ -16,6 +16,9 @@ configurations {
 
 repositories {
     mavenCentral()
+}
+ext {
+    set("springBootStarterDataJpaVersion", "2.4.4")
 }
 
 dependencies {
@@ -27,6 +30,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation 'org.springframework.security:spring-security-test'
+    implementation "org.springframework.boot:spring-boot-starter-data-jpa:${springBootStarterDataJpaVersion}"
+    implementation 'org.postgresql:postgresql'
 }
 
 test {

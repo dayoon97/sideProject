@@ -1,0 +1,13 @@
+server:
+  port: 8090
+
+spring:
+  security:
+    user:
+      name: user
+      password: 1234
+  datasource:
+    url: jdbc:postgresql://wwserver.postgres.database.azure.com:5432/postgres
+    username: king
+    password: kh20200219!
+    driver-class-name: org.postgresql.Driver
