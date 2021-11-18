@@ -49,7 +49,7 @@ public class UserController {
 
     @GetMapping
     public UserListResource get() {
-        log.info("[get]");
+        log.info("[get] ");
         return new UserListResource(userService.get()
                 .stream().map(userResourceConverter::from)
                 .collect(Collectors.toCollection(LinkedList::new)));
